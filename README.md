@@ -1,4 +1,4 @@
-# Vaadin Jetty Add-on
+# Jetty Vaadin Add-on
 
 Jetty Vaadin is a Vaadin add-on that allows you to run a Jetty Server for a Vaadin application in Java.
 
