@@ -8,13 +8,13 @@ Jetty Vaadin Add-on is highly useful when developing Vaadin add-ons. It simplifi
 
 Follow this instructions to get a single module Vaadin add-on Maven project:
 
-1. Create a Vaadin project using the `vaadin-archetype-widget` Maven archetype (see <https://vaadin.com/maven#archetypes>).
+1) Create a Vaadin project using the `vaadin-archetype-widget` Maven archetype (see <https://vaadin.com/maven#archetypes>).
 
-2. Remove the generated demo module and copy the `src` directory, the `assembly` directory, and the `pom.xml` file in the addon module to the root directory and remove the addon directory (this will overwrite the pom in the root directory).
+2) Remove the generated demo module and copy the `src` directory, the `assembly` directory, and the `pom.xml` file in the addon module to the root directory and remove the addon directory (this will overwrite the pom in the root directory).
 
-3. Add the `jetty-vaadin` dependency using `<scope>test</scope>` in your `pom.xml`.
+3) Add the `jetty-vaadin` dependency using `<scope>test</scope>` in your `pom.xml`.
 
-4. Add the `vaadin-themes` dependency in your `pom.xml` if required (most of the time it is):
+4) Add the `vaadin-themes` dependency in your `pom.xml` if required (most of the time it is):
 
 ```
 <dependency>
@@ -25,7 +25,7 @@ Follow this instructions to get a single module Vaadin add-on Maven project:
 </dependency>
 ```
 
-5. If a custom widgetset is required, add the `vaadin-maven-plugin`:
+5) If a custom widgetset is required, add the `vaadin-maven-plugin`:
 
 ```
 <plugin>
@@ -54,7 +54,7 @@ Follow this instructions to get a single module Vaadin add-on Maven project:
 </plugin>
 ```
 
-6. If no custom widgetset is required, add the `vaadin-client-compiled`:
+6) If no custom widgetset is required, add the `vaadin-client-compiled`:
 
 ```
 <dependency>
@@ -66,14 +66,14 @@ Follow this instructions to get a single module Vaadin add-on Maven project:
 
 ```
 
-7. Implement a UI in the test directory. Use the `@Widgetset` annotation if required:
+7) Implement a UI in the test directory. Use the `@Widgetset` annotation if required:
 
 ```
 @Widgetset("com.example.WidgetSet")
 public class TestUI extends UI { ... }
 ```
 
-8. Add a standard `main` method to the UI implementation and create and start a new `VaadinJettyServer`:
+8) Add a standard `main` method to the UI implementation and create and start a new `VaadinJettyServer`:
 
 ```
 public static void main(String[] args) throws Exception {
@@ -83,9 +83,9 @@ public static void main(String[] args) throws Exception {
 
 ```
 
-9. Build the project (mvn clean package).
+9) Build the project (mvn clean package).
 
-10. Run the Java application from your IDE.
+10) Run the Java application from your IDE.
 
 If you are using Linux or Mac, you can copy and paste the following in a terminal and continue from step 3:
 
