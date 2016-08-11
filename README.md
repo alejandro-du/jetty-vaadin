@@ -85,7 +85,10 @@ public static void main(String[] args) throws Exception {
 
 **9)** Build the project (mvn clean package).
 
-**10)** Run the Java application from your IDE.
+**10)** Run the standalone Java application from your IDE (the IDE will manage the classpath) or with Maven:
+```
+mvn exec:java -Dexec.mainClass="com.example.TestUI" -Dexec.classpathScope=test
+```
 
 If you are using Linux or Mac, you can copy and paste the following in a terminal and continue from step 3:
 
