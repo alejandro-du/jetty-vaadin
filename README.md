@@ -1,3 +1,6 @@
+[![Published on Vaadin  Directory](https://img.shields.io/badge/Vaadin%20Directory-published-00b4f0.svg)](https://vaadin.com/directory/component/jetty-vaadin-add-on)
+[![Stars on Vaadin Directory](https://img.shields.io/vaadin-directory/star/jetty-vaadin-add-on.svg)](https://vaadin.com/directory/component/jetty-vaadin-add-on)
+
 # Jetty Vaadin Add-on
 
 Jetty Vaadin is a Vaadin add-on that allows you to run a Jetty Server for a Vaadin application in Java.
